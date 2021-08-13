@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Conjuntos numéricos | demo2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="alvaro" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex: {
+    macros: {
+     R: "{\\mathbb{R}}", 
+	Q:"{\\mathbb{Q}}",
+	N:"{\\mathbb{N}}",
+	Z:"{\\mathbb{Z}}",
+	I:"{\\mathbb{I}}",
+        Co:"{\\mathbb{C}}",
+        dis:"{\\displaystyle}",
+	fr: ["{\\dfrac{#1}{#2}}",2],
+	yy:"{\\wedge}",
+	oo:"{\\vee}",
+        V:"{\\lr{V}}",
+        F:"{\\lr{F}}",
+	ds:"{\\Delta}",
+	sii:"{\\leftrightarrow}",
+	Sii:"{\\Leftrightarrow}",
+	en:"{\\Rightarrow}",
+	fd:"{\\rightarrow}",
+	iaa:["{\\left\\langle #1 \\right\\rangle}",1],
+	iac:["{\\left\\langle #1 \\right]}",1],
+	ica:["{\\left[ #1 \\right\\rangle}",1],
+	icc:["{\\left[ #1 \\right]}",1],
+	enp:["{\\left(  #1 \\right)}",1],
+        enc:["{\\left[  #1 \\right]}",1],
+        enll:["{ \\left\\{  #1 \\right\\} }",1],
+	rc:["{\\sqrt{#1}}",1], 
+	lr:["{\\textrm{#1}}",1],
+	inp:"{+\\infty}",
+	inn:"{-\\infty}",
+        pt:"{\\forall}",
+	ex:"{\\exists}",
+        de:"{\\delta}",
+	co:"{\\subset}",
+	dc:"{\\setminus}",
+	lr:["{\\textrm{#1}}",1],
+	cl:["{\\begin{align}\\lr{A) }& #1 & \\lr{B) }& #2 & \\lr{C) }& #3 & \\lr{D) }& #4 & \\lr{E) }& #5 \\end{align}}",5],
+        clt:["{\\begin{align}\\lr{A) }& \\lr{#1} & \\lr{B) }& \\lr{#2} & \\lr{C) }& \\lr{#3} & \\lr{D) }& \\lr{#4} & \\lr{E) }& \\lr{#5} \\end{align}}",5],
+	cv:"{\\emptyset}"
+    }
+  }
+};
+</script>  
+
+
+
+<style> 
+body{
+  font-size:14pt;
+  font-family:verdana;
+}
+ </style>
+
+
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script></head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">demo2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="conjunto_potencia.html" class="no-ch">Conjunto Potencia</a></li>
+   <li><a href="ejemplos.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad.html" class="no-ch">Actividad.</a></li>
+   <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+   <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad0.html" class="no-ch">Actividad</a></li>
+   <li id="active"><a href="conjuntos_numricos.html" class="active no-ch">Conjuntos numéricos</a></li>
+   <li><a href="cuantificadores.html" class="no-ch">cuantificadores</a></li>
+   <li><a href="ejemplos1.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad1.html" class="no-ch">Actividad</a></li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="actividad0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cuantificadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Conjuntos numéricos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id49">
+<div class="iDevice emphasis0" >
+<div id="ta49_149_2" class="block iDevice_content">
+<div class="exe-text"><p>Los números naturales: <br />\[ \N=\{ 1,2,3,4,5,\ldots \} \]<br />Es aquel conjunto ordenado cuyo primer elemento es el 1 y además los siguientes elementos después del 1 son obtenidos a partir del anterior más uno.</p>
+<p>Los enteros enteros:<br />\[ \Z=\{\ldots,-4,-3,-2,-1,0,1,2,3,4,\ldots \} \]<br />Si denotamos por \( -\N=\{ \ldots,-4,-3,-2,-1\} \) , entonces \( \Z=-\N\cup\{0\}\cup\N \).<br />podemos representar gráficamente los números enteros como sigue</p>
+<p style="text-align: center;"><img src="fig1.png" alt="fig1" width="620" height="29" /></p>
+<p>la flecha indica el sentido en que los número van aumentando.</p>
+<p>También podemos representar como sigue</p>
+<p style="text-align: center;"><img src="fig2.png" alt="fig2" width="619" height="29" /></p>
+<p>estas no son las únicas maneras de representar gráficamente a los números enteros, también podemos poner la recta puntead de forma vertical o con alguna pendiente determinada.</p>
+<p>La elección de la representación dependerá del contexto sobre el cual se esté trabajando, por convención se elige la primera, pero que esto no influya en su imaginación.</p>
+<p>Los número racionales:<br />\[ \Q=\enll{\fr{a}{b}\mid a\in\Z,b\in\N} \]</p>
+<p>Los números irracionales:<br />\[ \I=\{ x\mid x \lr{ tiene representación decimal no periódica} \} \]</p>
+<p>Los números reales: \( \R=\Q\cup \I \).</p>
+<p>Lo números reales también se pueden representar gráficamente como sigue</p>
+<p style="text-align: center;"><img src="fig5.png" alt="fig5" width="684" height="32" /></p>
+<p>esta gráfica se le conoce como la recta numérica.</p>
+<p>Los número complejos: \( \Co=\{ a+bi\mid a,b\in\R, i^2=-1 \} \)</p>
+<p>Una figura que puede darnos una idea aproximada de como se contienen estos conjuntos numéricos es la siguiente.</p>
+<p style="text-align: center;"><img src="fig3.png" alt="fig3" width="481" height="328" /></p>
+<p style="text-align: justify;"><audio src="beepinicio.wav" autoplay="autoplay"><a href="beepinicio.wav">audio/wav</a></audio></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id50">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta50_150_2" class="block iDevice_content">
+<div class="exe-text"><p>Sean<br />\begin{align*}<br />A&amp;=\{ x\in\R\mid x\in\iac{\inn;3}\fd x\in\ica{-2;5} \}\\<br />B&amp;=\{x\in\R\mid x\not\in \ica{-1;8}\yy x\in\iaa{-2;9} \} <br />\end{align*}<br />Al determinar \( A\dc B \) se obtuvo \( \{a\}\cup\ica{b;c}\cup\ica{B;\inp} \), calcule \( a+b+c+d \).<br />\( \cl{12}{13}{14}{15}{16} \)</p>
+<p><a class="exe-dialog-link" rel="lightbox" href="#tba457898-6fbf-2e1e-6fe1-1fb23ce4c81c" id="linkba457898-6fbf-2e1e-6fe1-1fb23ce4c81c" onclick="play()"><strong>Respuesta:</strong></a></p>
+<div id="tba457898-6fbf-2e1e-6fe1-1fb23ce4c81c" class="exe-dialog-text js-hidden">
+<p>14</p>
+</div>
+<p><audio id="audio" src="beepinicio3.1.wav"></audio></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id51">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta51_151_2" class="block iDevice_content">
+<div class="exe-text"><p>Se definen los conjuntos:<br />\begin{align*}<br />A&amp;= \{ x\in\N\mid x\not\in\iac{-3;5}\fd x\in\ica{0;8} \} \\<br />B&amp;= \{ x\in A\mid x+2\in A \}<br />\end{align*}<br />Halle el cardinal del conjunto \( A\ds B \).<br />\( \cl{1}{2}{3}{4}{5} \)</p>
+<p><a class="exe-dialog-link" rel="lightbox" href="#t8c5208bd-079a-8d68-9e0d-3ebb0673ca57" id="link8c5208bd-079a-8d68-9e0d-3ebb0673ca57" onclick="play()"><strong>Respuesta:</strong></a></p>
+<div id="t8c5208bd-079a-8d68-9e0d-3ebb0673ca57" class="exe-dialog-text js-hidden">
+<p>2</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_objectives" id="id52">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_objectives.png)"><h1 class="iDeviceTitle">Definición: Cardinalidad de conjuntos infinitos.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta52_152_2" class="block iDevice_content">
+<div class="exe-text"><p>Sean \( A \) y \( B \) (finitos o infinitos) dos conjuntos no vacíos, si existe una biyección (correspondencia biunívoca) entre \( A \) y \( B \), diremos que los conjuntos son equipotentes o tiene la misma cardinalidad, y se denota por <br />\[ n(A)=n(B) \]</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta53_153_2" class="block iDevice_content">
+<div class="exe-text"><ul style="list-style-type: circle;">
+<li>Si \( A=\N\cup\{ 0 \} \) entonces \( n(A)=n(\N) \).</li>
+<li>Si \( A=\{ 2k\mid k\in\N \} \) entonces \( n(A)=n(\N) \).</li>
+<li>si \( A=\{2k-1\mid k\in\N \} \) entonces \( n(A)=n(\N) \).</li>
+<li>\( n(\Z)=n(\N) \).</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper AppletIdevice" id="id73">
+<div class="iDevice emphasis0" >
+<div class="iDevice_content">
+
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="actividad0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cuantificadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body></html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Ejemplos | demo2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="alvaro" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex: {
+    macros: {
+     R: "{\\mathbb{R}}", 
+	Q:"{\\mathbb{Q}}",
+	N:"{\\mathbb{N}}",
+	Z:"{\\mathbb{Z}}",
+	I:"{\\mathbb{I}}",
+        Co:"{\\mathbb{C}}",
+        dis:"{\\displaystyle}",
+	fr: ["{\\dfrac{#1}{#2}}",2],
+	yy:"{\\wedge}",
+	oo:"{\\vee}",
+        V:"{\\lr{V}}",
+        F:"{\\lr{F}}",
+	ds:"{\\Delta}",
+	sii:"{\\leftrightarrow}",
+	Sii:"{\\Leftrightarrow}",
+	en:"{\\Rightarrow}",
+	fd:"{\\rightarrow}",
+	iaa:["{\\left\\langle #1 \\right\\rangle}",1],
+	iac:["{\\left\\langle #1 \\right]}",1],
+	ica:["{\\left[ #1 \\right\\rangle}",1],
+	icc:["{\\left[ #1 \\right]}",1],
+	enp:["{\\left(  #1 \\right)}",1],
+        enc:["{\\left[  #1 \\right]}",1],
+        enll:["{ \\left\\{  #1 \\right\\} }",1],
+	rc:["{\\sqrt{#1}}",1], 
+	lr:["{\\textrm{#1}}",1],
+	inp:"{+\\infty}",
+	inn:"{-\\infty}",
+        pt:"{\\forall}",
+	ex:"{\\exists}",
+        de:"{\\delta}",
+	co:"{\\subset}",
+	dc:"{\\setminus}",
+	lr:["{\\textrm{#1}}",1],
+	cl:["{\\begin{align}\\lr{A) }& #1 & \\lr{B) }& #2 & \\lr{C) }& #3 & \\lr{D) }& #4 & \\lr{E) }& #5 \\end{align}}",5],
+        clt:["{\\begin{align}\\lr{A) }& \\lr{#1} & \\lr{B) }& \\lr{#2} & \\lr{C) }& \\lr{#3} & \\lr{D) }& \\lr{#4} & \\lr{E) }& \\lr{#5} \\end{align}}",5],
+	cv:"{\\emptyset}"
+    }
+  }
+};
+</script>  
+
+
+
+<style> 
+body{
+  font-size:14pt;
+  font-family:verdana;
+}
+ </style>
+
+
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script></head>
+<body class="exe-web-site" id="exe-node-5"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">demo2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="conjunto_potencia.html" class="no-ch">Conjunto Potencia</a></li>
+   <li><a href="ejemplos.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad.html" class="no-ch">Actividad.</a></li>
+   <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+   <li id="active"><a href="ejemplos0.html" class="active no-ch">Ejemplos</a></li>
+   <li><a href="actividad0.html" class="no-ch">Actividad</a></li>
+   <li><a href="conjuntos_numricos.html" class="no-ch">Conjuntos numéricos</a></li>
+   <li><a href="cuantificadores.html" class="no-ch">cuantificadores</a></li>
+   <li><a href="ejemplos1.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad1.html" class="no-ch">Actividad</a></li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="cardinalidad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejemplos</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_question" id="id36">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo 1:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta36_136_2" class="block iDevice_content">
+<div class="exe-text"><p>Sean \( A \) y \( B \) dos conjuntos no vacíos tal que cumplen las condiciones: \( n(A\cup B)=6 \), \( n\big[P(A)\big]+n\big[P(B)\big]=40 \). Determine \( n\big[P(A\cap B)\big] \).<br />\( \cl{2}{4}{6}{8}{16}  \)</p>
+<div class="exe-fx exe-accordion" onclick="play()">
+<h2>Solución:</h2>
+<p> Sin perdida de generalidad podemos suponer que \( n(A)\leq n(B) \), luego \( n(B)=n(A)+x \) para algún \( x\in\N \) (variable auxiliar), de \( n\big[P(A)\big]+n\big[P(B)\big]=40 \) entonces \( 2^{n(A)}+2^{n(B)}=2^3\times 5 \) luego<br />\[ 2^{n(A)}+2^{n(A)+x}=2^3\times 5\en \underbrace{2^{n(A)}}_{par}\underbrace{(1+2^x)}_{impar}=2^3\times 5 \]<br />entonces \( 2^{n(A)}=2^3 \), \( n(A)=3 \), además \( 1+2^x=5 \), \( x=2 \), por lo tanto \( n(B)=5 \), considerando todo esto podemos hacer<br />\begin{align*}<br />n\big[P(A\cap B)\big]&amp;=2^{n(A\cap B)} =2^{n(A)+n(B)-n(A\cup B)}\\<br />&amp;=2^{3+5-6}=2^4=16<br />\end{align*}</p>
+</div>
+<p></p>
+<p><audio id="audio" src="beepinicio3.1.wav"></audio></p>
+<p><audio src="beepinicio.wav" autoplay="autoplay"><a href="beepinicio.wav">audio/wav</a></audio></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo 2:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta37_137_2" class="block iDevice_content">
+<div class="exe-text"><p>Si \( A \) y \( B \) son dos conjuntos finitos siendo \( n(A)\leq n(B) \), tales que:<br />\begin{align*}<br />n\big[P(A)\big]+n\big[P(B)\big]&amp;=160\tag{1}\\<br />n\big[(A\setminus B)\cup(B\setminus A)\big]&amp;= 8\tag{2}<br />\end{align*}<br />Entonces el número de elementos de \( N=A\cap\big(A^c\cup B\big) \) es<br />\( \cl{0}{1}{2}{3}{4} \)</p>
+<div class="exe-fx exe-accordion" onclick="play()">
+<h2>Solución:</h2>
+<p>De \( n(A)\leq n(B) \) podemos escribir que \( n(B)=n(A)+x \) para algún \( x \) entero no negativo (variable auxiliar), luego de (1)<br />\[ 2^{n(A)}+2^{n(A)+x}=160\en2^{n(A)}(1+2^x)=\underbrace{32}_{\dis 2^5}\cdot 5 \]</p>
+<p>comparando \( 2^{n(A)}=2^5 \), \( n(A)=5 \) y \( x=2 \), entonces \( n(B)=7 \), por otra parte de la figura</p>
+<p style="text-align: center;"><img src="fig6.png" alt="fig6" width="200" height="88" /></p>
+<p><br />note que \( n\big[(A\dc B)\cup (B\dc A)\big]=n(A\cup B)-n(A\cap B) \), reemplazando esto en (2) tenemos<br />\begin{align*}<br />n(A\cup B)-n(A\cap B)&amp;= 8\\<br />n(A)+n(B)-n(A\cap B)-n(A\cap B)&amp;=8\\<br />5+7-2n(A\cap B)&amp;=8<br />\end{align*}<br />entonces \( n(A\cap B)=2 \), note que <br />\( A\cap\big(A^c\cup B\big)=A\cap B \)<br />por lo tanto \( n(N)=2 \).</p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id39">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo 3.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_139_2" class="block iDevice_content">
+<div class="exe-text"><p>Los conjuntos \( A \) y \( B \) tiene tres elementos comunes en un universo \( U \), si:<br />\begin{align*}<br />n\big( P(A\cup B)\big)+n\big(P(A\cap B)\big) =520\tag{1}\\<br />n\big( P(A)\big)-n\big( P(B)\big) =96\tag{2}\\<br />n(B\setminus A)=n\big( (A\cup B)^c\big)\tag{3}<br />\end{align*} <br />Enfoque \( n(U) \) es:<br />\( \cl{9}{10}{11}{12}{13} \)</p>
+<div class="exe-fx exe-accordion" onclick="play()">
+<h2>Solución:</h2>
+<p>Siguiendo la idea del ejemplo anterior. De (2), \( 2^{n(A)}-2^{n(B)}=96 \), observemos que \( n(A)&gt;n(B) \), luego \( n(A)=n(B)+x \) para algún número entero positivo, reemplazando en (2) tenemos<br />\begin{align*}<br />2^{n(B)+x}-2^{n(B)}&amp;=2^5\cdot 3\\<br />\underbrace{2^{n(B)}}_{2^{5}}\big( 2^x-1 \big)&amp;=2^5\cdot 3<br />\end{align*}<br />comparando tenemos que \( n(B)=5 \), \( x=2 \), entonces \( n(A)=7 \), además por dato \( n(A\cap B)=3 \) con lo que tenemos podemos completar la siguiente figura</p>
+<p style="text-align: center;"><img src="fig7.png" alt="Fig7" width="306" height="158" /></p>
+<p><br />por (3) observe que \( n(B\dc A)=2=n\big( (A\cup B)^c \big) \), por lo tanto de la figura tenemos que \( n(U)=11 \).<br />\(  \textbf{Note}\) que (1) es solo un distractor.</p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo 4.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_140_2" class="block iDevice_content">
+<div class="exe-text"><p>Sean \( A,B \) y \( C \) conjuntos de números enteros, tal que \( A \) tiene 8 elementos, \( B \) tiene 4 elementos y \( C \) tiene 7 elementos y \( A\cup B\cup C \) tiene 16 elementos. Entonces el máximo números de elementos que puede tener el conjunto \( D=(A\cap B)\cup (B\cap C) \) es<br />\( \cl{1}{2}{3}{4}{0} \)</p>
+<div class="exe-fx exe-accordion" onclick="play()">
+<h2>Solución:</h2>
+<p>Previamente observemos que<br />\[ n(D)=n(A\cap B)+n(B\cap C)-n(A\cap B\cap C)\tag{1} \]<br />luego<br />\begin{multline*}<br />n(A\cup B\cup C)=n(A)+n(B)+n(C)\underline{-n(A\cap B)}-\\<br />n(A\cap C)\underline{-n(B\cap C)+n(A\cap B\cap C)}<br />\end{multline*}<br />reemplazando los datos del problema y la parte subrayada por (1) tenemos<br />\[ 16=19-n(A\cap C)-n(D) \]<br />despejando \( n(D) \) tenemos<br />\[ n(D)=3-n(A\cap C) \]<br />luego para que \( n(D) \) se máximo, \( n(A\cap C)\) tiene que ser mínimo, que en este caso puede ser cero, por lo tanto el máximo de \( n(D) \) es 3.</p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_question" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo 5.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_141_2" class="block iDevice_content">
+<div class="exe-text"><p>Sean \( A,B \) y \( C \) tales que el conjunto \( A \) tiene 3 elementos, \( B \) tiene 4 elementos y \( C \) tiene 5 elementos \( N \) representa el número máximo de elementos del conjunto \( P(A\cup B\cup C) \), \( M \) representa el número mínimo de elementos del conjunto \( P(A\cup B\cup C) \). Determine el valor de \( M\cdot N \).<br />\( \cl{2^{15}}{2^{16}}{2^{17}}{2^{18}}{2^{19}} \)</p>
+<div class="exe-fx exe-accordion" onclick="play()">
+<h2>Solución:</h2>
+<p>Recuerde que \[ n(P(A\cup B\cup C))=2^{n(A\cup B\cup C)}.\tag{1} \]<br />Entonces \( n(A\cup B\cup C) \) será máximo cuando \( A,B \) y \( C \) sean disjuntos, es decir \( \max (n(A\cup B\cup C))=n(A)+n(B)+n(C)=12 \).\\<br />Por otra parte, \( n(A\cup B\cup C) \) será mínimo cuando \( A\co B\co C \), es decír \( \min(n(A\cup B\cup C))=n(C)=5 \). Luego <br />\[ \begin{array}{c}<br />5\leq n(A\cup B\cup C)\leq 12 \\<br />M=2^{5}\leq 2^{n(A\cup B\cup C)}\leq 2^{12}=N<br />\end{array}<br />\] por lo tanto \( M\cdot N=2^{5}\cdot 2^{12}=2^{17} \).</p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper AppletIdevice" id="id72">
+<div class="iDevice emphasis0" >
+<div class="iDevice_content">
+
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="cardinalidad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body></html>

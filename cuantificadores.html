@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>cuantificadores | demo2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="alvaro" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex: {
+    macros: {
+     R: "{\\mathbb{R}}", 
+	Q:"{\\mathbb{Q}}",
+	N:"{\\mathbb{N}}",
+	Z:"{\\mathbb{Z}}",
+	I:"{\\mathbb{I}}",
+        Co:"{\\mathbb{C}}",
+        dis:"{\\displaystyle}",
+	fr: ["{\\dfrac{#1}{#2}}",2],
+	yy:"{\\wedge}",
+	oo:"{\\vee}",
+        V:"{\\lr{V}}",
+        F:"{\\lr{F}}",
+	ds:"{\\Delta}",
+	sii:"{\\leftrightarrow}",
+	Sii:"{\\Leftrightarrow}",
+	en:"{\\Rightarrow}",
+	fd:"{\\rightarrow}",
+	iaa:["{\\left\\langle #1 \\right\\rangle}",1],
+	iac:["{\\left\\langle #1 \\right]}",1],
+	ica:["{\\left[ #1 \\right\\rangle}",1],
+	icc:["{\\left[ #1 \\right]}",1],
+	enp:["{\\left(  #1 \\right)}",1],
+        enc:["{\\left[  #1 \\right]}",1],
+        enll:["{ \\left\\{  #1 \\right\\} }",1],
+	rc:["{\\sqrt{#1}}",1], 
+	lr:["{\\textrm{#1}}",1],
+	inp:"{+\\infty}",
+	inn:"{-\\infty}",
+        pt:"{\\forall}",
+	ex:"{\\exists}",
+        de:"{\\delta}",
+	co:"{\\subset}",
+	dc:"{\\setminus}",
+	lr:["{\\textrm{#1}}",1],
+	cl:["{\\begin{align}\\lr{A) }& #1 & \\lr{B) }& #2 & \\lr{C) }& #3 & \\lr{D) }& #4 & \\lr{E) }& #5 \\end{align}}",5],
+        clt:["{\\begin{align}\\lr{A) }& \\lr{#1} & \\lr{B) }& \\lr{#2} & \\lr{C) }& \\lr{#3} & \\lr{D) }& \\lr{#4} & \\lr{E) }& \\lr{#5} \\end{align}}",5],
+	cv:"{\\emptyset}"
+    }
+  }
+};
+</script>  
+
+
+
+<style> 
+body{
+  font-size:14pt;
+  font-family:verdana;
+}
+ </style>
+
+
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script></head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">demo2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="conjunto_potencia.html" class="no-ch">Conjunto Potencia</a></li>
+   <li><a href="ejemplos.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad.html" class="no-ch">Actividad.</a></li>
+   <li><a href="cardinalidad.html" class="no-ch">Cardinalidad</a></li>
+   <li><a href="ejemplos0.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad0.html" class="no-ch">Actividad</a></li>
+   <li><a href="conjuntos_numricos.html" class="no-ch">Conjuntos numéricos</a></li>
+   <li id="active"><a href="cuantificadores.html" class="active no-ch">cuantificadores</a></li>
+   <li><a href="ejemplos1.html" class="no-ch">Ejemplos</a></li>
+   <li><a href="actividad1.html" class="no-ch">Actividad</a></li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="conjuntos_numricos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplos1.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">cuantificadores</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_objectives" id="id54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_objectives.png)"><h1 class="iDeviceTitle">Definición:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_154_2" class="block iDevice_content">
+<div class="exe-text"><p>Una función proposicional sobre un conjunto \( A \), es cualquier<br />expresión que depende de un parámetro \( x \), se denota por \( p(x) \), de tal forma que :</p>
+<p>El valor de verdad de \( p(x) \) depende de los elementos que \( x \) representa de \( A \).</p>
+<p><audio src="beepinicio.wav" autoplay="autoplay"><a href="beepinicio.wav">audio/wav</a></audio></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id55">
+<div class="iDevice emphasis0" >
+<div id="ta55_155_2" class="block iDevice_content">
+<div class="exe-text"><p>Las siguientes expresiones se consideran funciones proposicionales sobre \( \R \):<br />\[ p(x):x+3\leq 5\quad;\quad q(x):x^2-1=0\quad;\quad r(x):(x+2)(x-3)&lt;0 \]</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_156_2" class="block iDevice_content">
+<div class="exe-text"><p>Sea la función proposicional, \( p(x):2&lt;x \) sobre el conjunto \( \R \), entonces tenemos que:</p>
+<ul style="list-style-type: circle;">
+<li>\( p(2)\equiv \F \), \( p(3)\equiv \V \), \( p(-2)\equiv \F \)</li>
+<li>Si \( x\in\R \) tal que \( 2&lt;x \), entonces \( p(x)\equiv \V \)</li>
+<li>Si \( x\in\R \) tal que \( x\leq 2 \), entonces \( p(x)\equiv \F \).</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_reading" id="id57">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Notación:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta57_157_2" class="block iDevice_content">
+<div class="exe-text"><ul style="list-style-type: circle;">
+<li>El cuantificador universal se denota por \( \pt \) y se lee para todo.</li>
+<li>El cuantificador existencial se denota por \( \ex \) y se lee existe.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_objectives" id="id58">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_objectives.png)"><h1 class="iDeviceTitle">Definción:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta58_158_2" class="block iDevice_content">
+<div class="exe-text"><p>Sea un conjunto \( A \)<br />\[ \big[\pt x\in A,p(x)\big]\equiv \V \quad\Sii\quad \lr{si }\pt x\in A\lr{ se tiene que } p(x)\equiv\V \]<br />\[ \big[ \ex x\in A\mid p(x) \big]\equiv\V\quad\Sii\quad \lr{Si }\ex x\in A\lr{ tal que }p(x)\equiv \V \]</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id59">
+<div class="iDevice emphasis0" >
+<div id="ta59_159_2" class="block iDevice_content">
+<div class="exe-text"><p>\( \pt x\in A \), significa para cada uno de los \( x\in A \).</p>
+<p>\( \ex x\in A \), significa que existe al menos un \( x\in A \).</p>
+<p>Observe en la definición anterior, que una función proposicional se convierte en proposición cuando se le acompaña de un cuantificador.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id60">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta60_160_2" class="block iDevice_content">
+<div class="exe-text"><p>Dado \( A=\{ 1;2;3;4 \} \), determine el valor de verdad de:</p>
+<ol style="list-style-type: upper-roman;">
+<li>\( \ex x\in A\mid 2x-1=7 \).</li>
+<li>\( \pt x\in A,\rc{x}&gt;1 \).</li>
+<li>\( \pt x\in A, 2x+3&lt;9 \).</li>
+</ol>
+<p>\( \clt{VFV}{VFF}{VVF}{FVV}{FFF} \)<br /><a class="exe-dialog-link" rel="lightbox" href="#te4b169d6-8915-0f2f-e0ce-0a5b80d3c5d2" id="linke4b169d6-8915-0f2f-e0ce-0a5b80d3c5d2" onclick="play()"><strong>Respuesta:</strong></a></p>
+<div id="te4b169d6-8915-0f2f-e0ce-0a5b80d3c5d2" class="exe-dialog-text js-hidden">
+<p>VFF</p>
+</div>
+<p><audio id="audio" src="beepinicio3.1.wav"></audio></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id61">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta61_161_2" class="block iDevice_content">
+<div class="exe-text"><p>Sea \( U=\{ 1;2;3;4 \} \), ¿cuáles? de las siguientes proposiciones son verdaderas.</p>
+<ol style="list-style-type: upper-roman;">
+<li>\( \ex x\in U\mid x+3\leq 9 \).</li>
+<li>\( \pt x\in U, x+3\leq 7 \).</li>
+<li>\( \pt x\in U,\ex y\in U\mid x+y\leq 7 \).</li>
+</ol>
+<p>\( \clt{Solo I}{Solo II}{Todas}{Solo II y III}{Solo I y III} \)</p>
+<p><a class="exe-dialog-link" rel="lightbox" href="#tbe1135ab-2b10-dcee-3429-7d7ef2728d5e" id="linkbe1135ab-2b10-dcee-3429-7d7ef2728d5e" onclick="play()"><strong>Respuesta:</strong></a></p>
+<div id="tbe1135ab-2b10-dcee-3429-7d7ef2728d5e" class="exe-dialog-text js-hidden">
+<p>Todas.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_reading" id="id63">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Negación de cuantificadores.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta63_163_2" class="block iDevice_content">
+<div class="exe-text"><p>\begin{align*}<br />\sim \big( \pt x\in A,p(x) \big)&amp;\equiv \ex x\in A\mid \sim p(x).\\<br />\sim\big( \ex x\in A \mid p(x) \big)&amp;\equiv \pt x\in A,\sim p(x).<br />\end{align*}</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_preknowledge" id="id64">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo:</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta64_164_2" class="block iDevice_content">
+<div class="exe-text"><p>Negar la siguiente proposición:<br />\[ \pt \varepsilon&gt;0,\ex \delta&gt;0\mid \pt x\in \R, 0&lt;|x-3|&lt;\delta\fd |f(x)-7|&lt;\varepsilon \]</p>
+<p><strong><a class="exe-dialog-link" rel="lightbox" href="#te5bc9a4a-cc14-e252-1909-4331a0b6b59e" id="linke5bc9a4a-cc14-e252-1909-4331a0b6b59e" onclick="play()">Respuesta:</a></strong></p>
+<div id="te5bc9a4a-cc14-e252-1909-4331a0b6b59e" class="exe-dialog-text js-hidden">
+<p>\( \ex\varepsilon\mid \pt \de&gt;0,\ex x\in\N\mid 0&lt;|x-3|&lt;\de\ \yy\ |f(x)-7|\geq\varepsilon \)</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper AppletIdevice" id="id74">
+<div class="iDevice emphasis0" >
+<div class="iDevice_content">
+
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="conjuntos_numricos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplos1.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body></html>
